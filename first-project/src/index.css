@@ -17,3 +17,17 @@ body {
 .main-content {
   padding: 20px 0px 20px 0px;
 }
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.flex {
+  display: flex;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.font-bold {
+  font-weight: 700;
+}

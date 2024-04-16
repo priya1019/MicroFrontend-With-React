@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import HomeContent from "./HomeContent";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -14,14 +15,15 @@ const App = () => {
       );
       const result = await response.json();
       setData(result);
-      console.log(result, "data");
     };
     fetchData();
   }, []);
   return (
     <div className="container">
       <Header data={data} />
-      <div className="main-content">First Page Content</div>
+      <div className="main-content">
+        <HomeContent />
+      </div>
       <Footer />
     </div>
   );
