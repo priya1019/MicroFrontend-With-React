@@ -8,3 +8,52 @@ body {
   max-width: 800px;
   margin-top: 20px;
 }
+.login-container {
+  position: absolute;
+  padding: 20px;
+  border: 16px solid #226ddd;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+}
+.form-input {
+  border: 1px solid rgb(185, 184, 184);
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 20px;
+  width: 100%;
+}
+.login-button {
+  background-color: rgb(7, 202, 7);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.grid {
+  display: grid;
+}
+.gap-3 {
+  gap: 12px;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-right {
+  align-items: start;
+}
+.flex {
+  display: flex;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.clear-button {
+  background-color: white;
+  border: 1px solid rgb(9, 207, 9);
+  color: rgb(9, 207, 9);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+}

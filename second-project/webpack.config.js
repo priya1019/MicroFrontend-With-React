@@ -45,6 +45,9 @@ module.exports = (_, argv) => ({
       filename: "remoteEntry.js",
       remotes: {
         first_project: "first_project@http://localhost:3000/remoteEntry.js",
+        second_project: "second_project@http://localhost:3001/remoteEntry.js",
+        cart: "cart@http://localhost:3002/remoteEntry.js"
+
       },
       exposes: {},
       shared: {
