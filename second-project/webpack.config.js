@@ -49,7 +49,9 @@ module.exports = (_, argv) => ({
         cart: "cart@http://localhost:3002/remoteEntry.js",
         add_to_cart: "add_to_cart@http://localhost:3003/remoteEntry.js"
       },
-      exposes: {},
+      exposes: {
+        "SingleContentPage": "./src/SingleContentPage.jsx"
+      },
       shared: {
         ...deps,
         react: {
