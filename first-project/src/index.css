@@ -28,6 +28,9 @@ body {
 .flex-grow {
   flex-grow: 1;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .font-bold {
   font-weight: 700;
 }

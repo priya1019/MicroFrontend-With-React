@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import "./index.css";
-
+import Login from "cart/Login";
+import MiniCart from "cart/MiniCart";
 const Header = ({ data }) => {
-  console.log(data, "inside header");
   const [count, setCount] = useState(1);
   const onClickIncre = () => {
     setCount(count + 1);
   };
   return (
     <div className="header">
-      Fidget Spinner World <span onClick={onClickIncre}>{count}</span>
+      <div className="flex justify-between">
+        <div className="">
+          Fidget Spinner World <span onClick={onClickIncre}>{count}</span>
+        </div>
+        <div className="">
+          <Login />
+          <MiniCart />
+        </div>
+      </div>
     </div>
   );
 };

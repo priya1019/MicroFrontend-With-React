@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-
+import "remixicon/fonts/remixicon.css";
 import "./index.css";
 import Header from "./Header";
 import Footer from "./Footer";

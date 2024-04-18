@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
-
+import "remixicon/fonts/remixicon.css";
 import "./index.css";
 const Header = React.lazy(() => import("first_project/Header"));
 import Footer from "first_project/Footer";

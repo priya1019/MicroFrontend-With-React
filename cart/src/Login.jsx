@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./index.css";
 import { login, useLoggedIn } from "./cart";
 
 export default function Login() {
@@ -11,7 +11,7 @@ export default function Login() {
   if (loggedIn) return null;
 
   return (
-    <>
+    <div>
       <span onClick={() => setShowLogin(!showLogin)}>
         <i
           className="ri-fingerprint-line"
@@ -21,11 +21,9 @@ export default function Login() {
       </span>
       {showLogin && (
         <div
-          className="login-cotainer"
+          className="login-container"
           style={{
             width: 300,
-            top: "2rem",
-            left: -250,
           }}
         >
           <input
@@ -53,6 +51,6 @@ export default function Login() {
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 }
